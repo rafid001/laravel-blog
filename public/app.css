@@ -1,0 +1,16 @@
+body {
+    background-color: #ccc;
+    color: black;
+    max-width: 600px;
+    margin: auto;
+}
+
+p {
+    line-height: 1.7;
+}
+
+article + article {
+    border-top: 1px solid black;
+    margin-top: 1.6rem;
+    padding-top: 1.6rem;
+}

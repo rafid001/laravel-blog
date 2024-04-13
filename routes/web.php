@@ -11,13 +11,13 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('posts/{post}', function($id) {
+Route::get('posts/{post:slug}', function(Post $post) {
     return view('post', [
-        'post' => Post::findorfail($id)
+        'post' => $post
     ]);
 });
 
-Route::get('categories/{category}', function(Category $category) {
+Route::get('categories/{category:slug}', function(Category $category) {
     return view('posts', [
         'posts' => $category->posts
     ]);

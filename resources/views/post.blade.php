@@ -8,10 +8,12 @@
         <h1>{{ $post->title }}</h1>
 
 
-        <p>{{ $post->category->name }}</p>
+        <p>
+            By <a href="#">Rafid Hasan</a> in {{ $post->category->name }}
+        </p>
 
         <div>
-            {!! $post->body !!}
+            <p>{{ $post->body }}</p>
         </div>
 
         <a href="/">Go back</a>

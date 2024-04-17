@@ -7,9 +7,8 @@
     <article>
         <h1>{{ $post->title }}</h1>
 
-
         <p>
-            By <a href="#">Rafid Hasan</a> in {{ $post->category->name }}
+            By <a href="/authors/{{$post->author->id}}">{{$post->author->name}}</a> in {{ $post->category->name }}
         </p>
 
         <div>

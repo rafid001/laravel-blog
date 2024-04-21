@@ -13,7 +13,7 @@
     <div class="space-y-2 lg:space-y-0 lg:space-x-4 mt-8">
         <!-- Category -->
         <div class="relative flex lg:inline-flex items-center bg-gray-100 rounded-xl">
-            <x-dropdown :categories="$categories"/>
+            <x-dropdown :categories="$categories" />
         </div>
 
         <!-- Other Filters -->

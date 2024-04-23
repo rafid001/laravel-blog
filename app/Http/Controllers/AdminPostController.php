@@ -35,13 +35,13 @@ class AdminPostController extends Controller
 
         $post->update($attributes);
 
-        return back()->with('message','post updated!');
+        return redirect('/')->with('message','post updated!');
     }
 
     public function destroy(Post $post)
     {
         $post->delete();
 
-        return back()->with('message','post deleted!');
+        return redirect('/')->with('message','post deleted!');
     }
 }

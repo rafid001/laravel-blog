@@ -31,28 +31,5 @@ class RegisterController extends Controller
         auth()->login($user);
 
         return redirect('/')->with('message','your account has been created');
-
-        // $validator = Validator::make($request->all(), [
-        //     'username' => ['required'],
-        //     'name' => ['required'],  
-        //     'email' => ['required'],
-        //     'password' => ['required'],
-        // ]);
-
-        // if ($validator->fails()) {
-        //     // return redirect('register/create')
-        //     //             ->withErrors($validator)
-        //     //             ->withInput();
-        //     return redirect('/yabadabdo');
-        // }
-
-        // User::create([
-        //     'username' => $request->username,
-        //     'name' => $request->name,
-        //     'email' => $request->email,
-        //     'password' => bcrypt($request->password),
-        // ]);
-
-        // return redirect('/');
     }
 }
